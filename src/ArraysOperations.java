@@ -75,13 +75,13 @@ public class ArraysOperations {
 
     public void printStringArray(String[] array) {
         for (String s : array) {
-            System.out.print(s + " ");
+            System.out.println(s + " ");
         }
     }
 
     public void printIntArray(int[] array){
         for (int i : array) {
-            System.out.println(i + " ");
+            System.out.print(i + " ");
         }
     }
 }
