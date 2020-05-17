@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class ArraysOperations {
 
     public int[][] returnArrayWithLargerSum(int[][] array1, int[][] array2){
@@ -35,5 +37,13 @@ public class ArraysOperations {
             length += array[i].toCharArray().length;
         }
         return length;
+    }
+
+    public int findLargestNumber(int [] array){
+        return Arrays.stream(array).max().getAsInt();
+    }
+
+    public int findSmallestNumber(int [] array){
+        return Arrays.stream(array).min().getAsInt();
     }
 }
