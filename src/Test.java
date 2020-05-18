@@ -19,7 +19,7 @@ public class Test {
                 {21,4,1}
         };
         System.out.println("Tablica, której suma liczb jest większa: ");
-        ar.printInt2dArray(ar.returnArrayWithLargerSum(array1,array2));
+        ar.printArray(ar.returnArrayWithLargerSum(array1,array2));
 
         String[] stringFirstArray = new String[3];
         String[] stringSecondArray = new String[3];
@@ -30,9 +30,9 @@ public class Test {
         stringSecondArray[1] = "Bogusław";
         stringSecondArray[2] = "Bartłomiej";
         System.out.println("Tablica z większą liczbą znaków: ");
-        ar.printStringArray(ar.returnArrayWithMoreCharacters(stringFirstArray,stringSecondArray));
+        ar.printArray(ar.returnArrayWithMoreCharacters(stringFirstArray,stringSecondArray));
 
         System.out.println("Tablica jednowymiarowa o największej liczbie elementów w tablicy dwuwymiarowej: ");
-        ar.printIntArray(ar.return1dArray(array1));
+        ar.printArray(ar.getRowWithHighestSum(array1));
     }
 }
